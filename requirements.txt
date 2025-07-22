@@ -1,0 +1,10 @@
+pandas
+numpy
+torch
+pytorch-lightning
+prefect
+pandera
+omegaconf
+scikit-learn
+tqdm
+wandb

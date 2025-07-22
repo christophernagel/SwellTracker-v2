@@ -1,36 +1,36 @@
 # Station Configuration
+# The 'coordinates' dictionary is now the single source of truth for all active stations.
 stations:
-  active: &active_stations
-    - "46001"
-    - "46013"
-    - "46014"
-    - "46022"
-    - "46026"
-    - "46027"
-    - "46054"
-    - "46059"
-    - "46086"
-    - "51001"
-    - "51101"
   coordinates:
-    "46001": [36.785, -122.398]
-    "46013": [34.765, -121.871]
-    "46014": [37.345, -123.456]
-    "46022": [40.750, -124.500]
-    "46026": [37.755, -122.694]
-    "46027": [35.705, -121.279]
-    "46054": [34.269, -120.453]
-    "46059": [38.044, -123.031]
-    "46086": [34.245, -119.911]
-    "51001": [24.427, -162.051]
-    "51101": [24.292, -162.062]
+    # --- Corrected & Expanded Pacific Stations ---
+    "41001": [34.686, -72.664] # East Coast Reference
+    "42001": [25.866, -89.658] # Gulf of Mexico Reference
+    "44013": [42.346, -70.651] # Boston
+    "44025": [40.251, -73.164] # New York
+    "44027": [43.177, -70.430] # Jonesport, ME
+    "46012": [37.359, -122.880] # Half Moon Bay, CA
+    "46013": [38.234, -123.319] # Bodega Bay, CA
+    "46014": [39.222, -123.978] # Point Arena, CA
+    "46022": [40.750, -124.500] # Eel River, CA
+    "46026": [37.755, -122.854] # San Francisco, CA
+    "46027": [35.705, -121.879] # Cape San Martin, CA
+    "46042": [36.785, -122.398] # Monterey Bay, CA (Corrected from 46001)
+    "46054": [34.269, -120.453] # West Santa Barbara, CA
+    "46059": [38.044, -123.031] # Point Reyes, CA
+    "46086": [33.750, -119.060] # San Clemente Basin, CA
+    "46232": [34.938, -120.869] # Point Arguello, CA
+
+    # --- Corrected & Expanded Hawaiian Stations ---
+    "51001": [23.427, -162.301] # NW Hawaii
+    "51002": [17.158, -157.798] # Hilo, HI
+    "51003": [21.842, -159.392] # S Kauai, HI
+    "51101": [24.292, -162.062] # N Hawaii
 
 # Data Paths
 data_paths:
-  raw: "data/raw"
-  processed: "data/processed"
+  historical_archive: "data/historical_archive"
+  processed_features: "data/processed/historical_features.parquet"
   models: "data/models"
-  feature_store: "s3://wave-forecast/features"
 
 # Processor Configuration
 processor:
@@ -129,7 +129,7 @@ processor:
       0.480,
       0.485,
     ]
-  max_time_gap: "15min"
+  max_time_gap: "30min"
 
 # Model Architecture
 model:

@@ -1,0 +1,6 @@
+data/historical-archive/
+venv/
+data/historical_archive/
+__pycache__/
+.DS_Store
+*.pyc
