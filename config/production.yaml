@@ -2,29 +2,52 @@
 # The 'coordinates' dictionary is now the single source of truth for all active stations.
 stations:
   coordinates:
-    # --- Corrected & Expanded Pacific Stations ---
-    "41001": [34.686, -72.664] # East Coast Reference
-    "42001": [25.866, -89.658] # Gulf of Mexico Reference
-    "44013": [42.346, -70.651] # Boston
-    "44025": [40.251, -73.164] # New York
-    "44027": [43.177, -70.430] # Jonesport, ME
-    "46012": [37.359, -122.880] # Half Moon Bay, CA
-    "46013": [38.234, -123.319] # Bodega Bay, CA
-    "46014": [39.222, -123.978] # Point Arena, CA
-    "46022": [40.750, -124.500] # Eel River, CA
-    "46026": [37.755, -122.854] # San Francisco, CA
-    "46027": [35.705, -121.879] # Cape San Martin, CA
-    "46042": [36.785, -122.398] # Monterey Bay, CA (Corrected from 46001)
-    "46054": [34.269, -120.453] # West Santa Barbara, CA
-    "46059": [38.044, -123.031] # Point Reyes, CA
-    "46086": [33.750, -119.060] # San Clemente Basin, CA
-    "46232": [34.938, -120.869] # Point Arguello, CA
+    # --- East Coast & Gulf of Mexico Stations ---
+    "41001": [34.686, -72.664]
+    "42001": [25.866, -89.658]
+    "44013": [42.346, -70.651]
+    "44025": [40.251, -73.164]
+    "44027": [43.177, -70.430]
 
-    # --- Corrected & Expanded Hawaiian Stations ---
-    "51001": [23.427, -162.301] # NW Hawaii
-    "51002": [17.158, -157.798] # Hilo, HI
-    "51003": [21.842, -159.392] # S Kauai, HI
-    "51101": [24.292, -162.062] # N Hawaii
+    # --- Pacific Stations ---
+    "46012": [37.359, -122.880]
+    "46013": [38.234, -123.319]
+    "46014": [39.222, -123.978]
+    "46022": [40.750, -124.500]
+    "46026": [37.755, -122.854]
+    "46027": [35.705, -121.879]
+    "46042": [36.785, -122.398]
+    "46054": [34.269, -120.453]
+    "46059": [38.044, -123.031]
+    "46086": [33.750, -119.060]
+    "46232": [34.938, -120.869]
+
+    # --- Hawaiian Stations ---
+    "51001": [23.427, -162.301]
+    "51002": [17.158, -157.798]
+    "51003": [21.842, -159.392]
+    "51101": [24.292, -162.062]
+
+    # --- Added for Backfill ---
+    "46221": [33.860, -118.641] # Santa Monica Bay, CA
+    "46224": [33.178, -117.472] # Oceanside Offshore, CA
+    "46225": [32.933, -117.391] # Torrey Pines Outer, CA
+    "46235": [32.570, -117.169] # Imperial Beach Nearshore, CA
+    "46236": [36.759, -121.950] # Monterey Canyon Outer, CA
+    "46237": [37.788, -122.634] # San Francisco Bar, CA
+    "51201": [21.671, -158.118] # Waimea Bay, HI
+    "51202": [21.414, -157.681] # Mokapu Point, HI
+    "42002": [25.950, -93.780] # West Gulf
+    "42019": [27.908, -95.343] # Freeport, TX
+    "42020": [26.970, -96.679] # Corpus Christi, TX
+    "42036": [28.500, -84.505] # West Tampa, FL
+    "44017": [40.694, -72.048] # Montauk Point, NY
+    "46001": [56.296, -148.027] # Western Gulf of Alaska
+    "46002": [42.662, -130.507] # West Oregon
+    "46005": [46.143, -131.090] # West Washington
+    "46006": [40.764, -137.377] # Southeast Papa
+    "46035": [57.034, -177.468] # Central Bering Sea
+    "46060": [60.571, -146.795] # West Orca Bay, AK
 
 # Data Paths
 data_paths:
